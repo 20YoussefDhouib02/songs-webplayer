@@ -24,17 +24,17 @@
         <div class="ms-auto">
           <ul class="navbar-nav me-5 mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./index.html"
+              <a class="nav-link" aria-current="page" href="./index.php"
                 >Discover</a
               >
             </li>
           </ul>
         </div>
-        <a class="navbar-brand" href="./index.html">SoundShare</a>
+        <a class="navbar-brand" href="./index.php">SoundShare</a>
         <div class="me-auto">
           <ul class="navbar-nav ms-5 mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="./share.html">Share</a>
+              <a class="nav-link active" href="./share.php">Share</a>
             </li>
           </ul>
         </div>
