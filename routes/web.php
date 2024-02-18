@@ -1,18 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SongsController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', [SongsController::class, 'index'])->name('index');
+
+
+Route::get('/song', [SongsController::class, 'show'])->name('song');
+
+Route::get('/share', [SongsController::class, 'create'])->name('share');
+
+Route::post('/share', [SongsController::class, 'store'])->name('share');
+
